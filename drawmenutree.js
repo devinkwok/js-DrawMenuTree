@@ -1,4 +1,4 @@
-window.onload = function() {
+let DrawMenuTree = (function() {
     let ROOT_WINDOW_POSITION = '50%'
     let CONTAINER_MARGIN_TOP = 60
     let CONTAINER_MARGIN_LEFT = 15
@@ -275,6 +275,15 @@ window.onload = function() {
         set_position_bottom(document.getElementById(ID_HOME_LOGO), bottom_x - LOGO_X, bottom_y + LOGO_Y)
     }
 
-    // if (window.matchMedia("(min-width: 450px)").matches)
-    build_tree()
-}
+    function ready() {
+        if (document.readyState != 'loading'){
+            build_tree();
+        } else {
+          document.addEventListener('DOMContentLoaded', build_tree);
+        }
+      }
+    
+      return {
+          draw: ready
+      }
+})();

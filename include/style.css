@@ -1,233 +1,10 @@
-/* typography */
-
-body {
-    font: 62.5% 'Lora', serif;
-    background: url('paper.jpg') repeat;
-}
-
-i {
-    font: italic 1.143em 'Cardo', serif;
-}
-
-a,
-a:visited {
-    color: #978e8a;
-    text-decoration: none;
-}
-
-a:hover,
-a:active,
-a:focus {
-    color: #d1b980;
-}
-
-img {
-    border: none;
-}
-
-ul {
-    list-style: none;
-    padding-left: 2.6em;
-}
-
-.article ul li:before {
-    content: "\B7";
-    float: left;
-    margin-left: -1.5em;
-}
-
-ol {
-    padding-left: 2.8em;
-}
-
-h1,
-h2,
-h3 {
-    font: 3.2em 'Lora', serif;
-    color: #6c2936;
-    margin: 1.5em 0 1em 0;
-}
-
-h1 {
-    background: url('paper.jpg') repeat;
-}
-
-h2 {
-    font-size: 1.6em;
-}
-
-h3 {
-    font-size: 1.2em;
-}
-
-p {
-    margin: 0;
-    text-indent: 2.6em;
-}
-
-p.noindent {
-    text-indent: 0;
-}
-
-blockquote {
-    font-style: italic;
-    margin: 2em 2.8em;
-    line-height: 1.75em;
-}
-
-#footnote {
-    font-size: 0.93em;
-    font-style: italic;
-}
-
-.details {
-    font: italic 1.143em 'Cardo', serif;
-    color: #978e8a;
-}
-
-.details p {
-    text-transform: lowercase;
-}
-
-.propername {
-    text-transform: none;
-}
-
-.article {
-    font-size: 1.4em;
-    line-height: 2em;
-}
-
-.nav a,
-.footer a {
-    font: italic 1.4em 'Cardo', serif;
-    text-transform: lowercase;
-    padding: 0 0.3em;
-}
-
-
-/* layout */
-
-body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    min-width: 320px;
-}
-
-img {
-    border: 1px solid #978e8a;
-    max-width: 100%;
-}
-
-.center,
-.left,
-.right {
-    padding: 2.6em 2.6em 1.6em 2.6em;
-    display: block;
-}
-
-.center {
-    text-align: center;
-}
-
-.left {
-    float: left;
-}
-
-.right {
-    float: right;
-}
-
-#page {
-    padding: 3.2em 9% 3.5em 15%;
-    max-width: 1020px;
-    margin: 0 auto;
-}
-
-.header {
-    margin: 0;
-    position: relative;
-}
-
-.header .nav {
-    padding: 0 0 8.9em 0;
-    text-align: right;
-    margin-right: -1.6em;
-}
-
-.header #corner-top-right {
-    z-index: -100;
-    margin: 0 0 0.9em;
-    width: 100%;
-    height: 260px;
-    position: absolute;
-    right: -12px;
-    bottom: -238px;
-    background: url('corner.png') no-repeat top right;
-}
-
-.header h1 {
-    display: inline;
-    padding: 0 0.5em 0 0;
-    margin: 0 0 0 -8%;
-    background: url('paper.jpg') repeat;
-}
-
-.article {
-    clear: both;
-    margin: 0;
-    padding: 2.5em 9% 1.2em 9%;
-    min-height: 28em;
-}
-
-.section {
-    margin: 2.6em 0;
-}
-
-#footnote {
-    padding-top: 2.6em;
-}
-
-.details {
-    padding-top: 2.6em;
-    text-align: right;
-}
-
-#secondarydate {
-    font-size: 0.875em;
-    padding-top: 1em;
-}
-
-.footer {
-    margin: 0;
-    padding: 14.3em 0 0 0;
-    background: url('footer.png') no-repeat center top;
-    position: relative;
-    clear: both;
-    text-align: center;
-}
-
-.footer a {
-    margin: 0 1.2em;
-}
-
-
 /* front page */
-
 .treecategory,
 .treeitem,
 h4,
 .blurb,
 #homelogo {
     position: inherit;
-}
-
-.treecategory h4 {
-    text-transform: lowercase;
-    color: #978e8a;
-    margin: 0.5em;
-    font: italic 1.143em 'Cardo', serif;
 }
 
 .treecategory h4 {
@@ -240,32 +17,11 @@ h4,
     visibility: visible;
 }
 
-.treeitem h5 {
-    font: 1.6em 'Lora', serif;
-    color: #6c2936;
-    margin: 0.5em;
-    width: 15em;
-    z-index: -999;
-}
 
 .treeitem a:hover h5,
 .treeitem a:focus h5,
 .treeitem a:active h5 {
-    color: #d1b980;
-}
-
-.blurb {
-    font: italic 1.5em 'Cardo', serif;
-}
-
-.smalltreeitem {
-    font-size: 1em;
-}
-
-.smalltreeitem h5 {
-    font: italic 1.6em 'Cardo', serif;
-    margin: 0.5em;
-    text-transform: lowercase;
+    color: #dd0000;
 }
 
 html,
@@ -298,7 +54,6 @@ body.homepage {
     width: 240px;
     height: 160px;
     background: url('home.jpg') no-repeat bottom left;
-    opacity: 0.9;
 }
 
 .treeitem {
@@ -310,7 +65,7 @@ body.homepage {
     position: absolute;
     color: black;
     z-index: 999;
-    background: url('paper.jpg') repeat;
+    background: white;
     padding: 0.2em;
 }
 
@@ -392,28 +147,4 @@ body.homepage {
     background: url('leafnode.png') no-repeat center;
     width: 16px;
     height: 16px;
-}
-
-.headshot {
-    display: block;
-    width: 30%;
-    min-width: 140px;
-    margin: 3em auto 3em auto;
-}
-
-
-/** media dependent */
-
-@media (max-width: 720px) {
-    #page {
-        padding-left: 8%;
-        padding-right: 5%;
-    }
-    .article {
-        padding-left: 5%;
-        padding-right: 5%;
-    }
-    .header h1 {
-        margin-left: -4%;
-    }
 }
